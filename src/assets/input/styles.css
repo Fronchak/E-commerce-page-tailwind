@@ -1,3 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card {
+    @apply p-2;
+}
+
+.card-free-frete {
+    @apply inline-block py-1 px-2 text-xs font-bold bg-red-550 rounded-md mt-1 leading-tight;
+}
+
+.card-image {
+    @apply w-full rounded-md;
+}
+
+.card-body {
+    @apply px-2 pt-1 pb-2;
+}
+
+.card-old-price {
+    @apply text-sm text-red-550 mb-1;
+}
+
+.card-old-price span {
+    @apply line-through;
+}
+
+.card-a-vista {
+    @apply text-xs text-green-550;
+}
+
+.card-pix-price {
+    @apply text-2xl text-green-550 font-bold mb-2;
+}
+
+.card-pix {
+    @apply text-xs
+}
+
+.card-division {
+    @apply my-3 w-10 border-b-4 border-red-550;
+}
+
+.card-cart-price {
+    @apply text-xl text-red-550 font-bold mb-1;
+}
+
+.card-installments {
+    @apply text-sm;
+}
+
+.card-installments span {
+    @apply text-red-550 font-bold;
+}
+
+.card-without-fees {
+    @apply text-sm mb-2;
+}
+
+.card-button {
+    @apply px-3 py-1 rounded-md font-bold bg-white border text-black border-white transition-all;
+}
+
+.card-button:hover {
+    @apply bg-transparent text-white;
+}
+
+@screen sm {
+    .card-image {
+        @apply h-64;
+    }
+}
